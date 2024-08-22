@@ -7,8 +7,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npx pkgroll",
-    "watch": "npx tsx watch --clear-screen=false src/index"
+    "dev": "pkgroll --clean-dist --sourcemap=inline --watch",
+    "build": "pkgroll --clean-dist --minify"
   },
   "devDependencies": {
     "@binochoi/eslint-config-typescript": "^0.0.25",
