@@ -10,7 +10,7 @@ const newPackageJson = {
     files: ['*'],
     main: packageJson.main?.replace(new RegExp('./dist/', 'g'), './'),
     module: packageJson.main?.replace(new RegExp('./dist/', 'g'), './'),
-    type: packageJson.main?.replace(new RegExp('./dist/', 'g'), './'),
+    types: packageJson.main?.replace(new RegExp('./dist/', 'g'), './'),
     bin: packageJson.bin && replaceObjValRecursively(packageJson.bin, './dist/', './'),
 }
 createFolderIfNotExist('dist');
